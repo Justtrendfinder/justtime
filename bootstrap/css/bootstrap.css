@@ -222,12 +222,12 @@ textarea {
 }
 
 body {
-  margin: 0;
+  margin: 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
+  color: white;
+  background-color: grey;
 }
 
 a {
@@ -650,6 +650,7 @@ a:focus {
 
 p {
   margin: 0 0 10px;
+  line-height: 2em
 }
 
 .lead {
@@ -765,6 +766,7 @@ h3 {
 
 h1 {
   font-size: 38.5px;
+  background: black
 }
 
 h2 {
