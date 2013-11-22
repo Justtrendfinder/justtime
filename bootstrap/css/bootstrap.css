@@ -772,7 +772,8 @@ h3 {
 
 h1 {
   font-size: 38.5px;
-  background: black
+  background: black;
+  margin: auto;
 }
 
 h2 {
