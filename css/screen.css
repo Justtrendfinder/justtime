@@ -1,0 +1,463 @@
+* {
+margin: 0;
+padding: 0;
+font-size: 100%;
+}
+
+body {
+font: normal 15px/24px georgia, "Times New Roman", serif;
+color: #653d1d;
+background: url(background.png) 0 0 repeat-x;
+}
+
+.wrapper {
+width: 880px;
+margin: 0 auto;
+background-color: #fff;
+}
+
+
+#left-col {
+width: 280px;
+float: left;
+clear: both;
+margin: -52px 0 0 0;
+padding-top: 120px;
+background: url(column-fix.png) 0 0 repeat-x;
+}
+
+#right-col {
+width: 580px;
+float: right;
+margin: 70px 0 0 0;
+}
+
+#footer {
+clear: both
+}
+
+#main {
+padding-top: 2px;
+background: url(faux-column.png) 0 0 repeat-y;
+}
+
+/* ___________________ headerbereich */
+
+/*
+#header {
+position: relative;
+height: 370px;
+}
+
+
+h1 {
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+.headerimage {
+position: absolute;
+top: 0;
+right: 0;
+}
+*/
+
+
+h1 {
+float: left;
+margin-left: 15px;
+}
+
+.headerimage {
+float: right;
+}
+
+#navi {
+clear: both;
+}
+
+/* ___________________ hauptnavigation */
+
+#navi {
+clear: both;
+margin-left: 295px;
+}
+
+#navi a:link,
+#navi a:visited {
+color: #653d1d;
+text-decoration: none;
+}
+
+#navi a:hover,
+#navi a:focus,
+#navi a:active {
+color: #627db3;
+}
+
+#navi li.active a:link,
+#navi li.active a:visited {
+color: #fff;
+}
+
+#navi li {
+list-style: none;
+float: left;
+margin-right: 12px;
+position: relative;
+padding: 6px 10px 6px 22px;
+background: url(icon/accept.png) 3px 9px no-repeat;
+}
+
+#nav-1 {top: 9px;}
+#nav-3 {top: -5px;}
+#nav-4 {top: -8px;}
+#nav-5 {top: -4px;}
+
+#navi #nav-2 {background-image: url(icon/time.png); }
+#navi #nav-3 {background-image: url(icon/world_go.png); }
+#navi #nav-4 {background-image: url(icon/html_valid.png); }
+#navi #nav-5 {background-image: url(icon/feed_edit.png); }
+
+#navi li.active {
+background-color: #627db3;
+/*border-radius: 6px;*/
+}
+
+/* ___________________________ subnavigation */
+
+#left-col ul a:link,
+#left-col ul a:visited {
+color: #653d1d;
+text-decoration: none;
+}
+
+#left-col ul a:hover,
+#left-col ul a:focus,
+#left-col ul a:active {
+color: #627db3
+}
+
+#left-col ul .active a:link,
+#left-col ul .active a:visited {
+color: #627db3;
+}
+
+#left-col li {
+list-style: none;
+margin-bottom: 10px;
+float: left;
+clear: both;
+}
+
+#left-col ul {
+overflow: hidden;
+margin-bottom: 60px;
+margin-left: 15px;
+}
+
+#left-col li.active {
+background: url(icon/arrow.png) right 7px no-repeat;
+padding-right: 13px;
+}
+
+#contactbox {
+clear: both;
+}
+
+
+/* ___________________ Inhaltsbereich */
+
+#right-col h2 {
+color: #627db3;
+font-size: 32px;
+font-weight: normal;
+font-family: Helvetica;
+margin-bottom: 20px;
+/*
+background: url(img/worldwideweb.png) top left no-repeat;
+text-indent: -10000px;
+*/
+height: 27px;
+}
+
+hr {
+border: none;
+height: 24px;
+background: url(img/divisor.png) center 0 no-repeat;
+margin: 30px 0;
+}
+
+#right-col img {
+padding: 2px;
+border: 1px #627db3 solid;
+margin: 25px 6px 25px 0;
+}
+
+#right-col img.last-child {
+margin-right: 0px
+}
+
+/*
+.gallery li {
+list-style: none;
+float: left;
+height: 180px;
+width: 140px;
+text-align: center;
+}
+
+
+.gallery {
+overflow: hidden;
+}
+*/
+
+.gallery li {
+display:inline-block;
+width: 140px;
+text-align: center;
+vertical-align: middle;
+}
+
+
+
+/* __________________________ Infobox */
+
+#contactbox {
+background-color: #627db3;
+/*border-radius: 10px;*/
+width: 209px;
+padding: 10px 15px;
+color: #fff;
+font-size: 13px;
+margin-left: 15px;
+}
+
+#contactbox a:link,
+#contactbox a:visited {
+color: #fff;
+}
+
+#contactbox:hover {
+background-color: #3e5c9a;
+}
+
+#contactbox h2 {
+font: normal 24px/22px "myriad pro", "Times New Roman", serif;
+font-size: 24px;
+margin-bottom: 8px;
+}
+
+#contactbox .address {
+margin-top: 8px;
+margin-bottom: 20px;
+line-height: 19px;
+}
+
+/* __________________________ Fusszeilenbereich */
+
+#footer {
+padding: 50px 0px;
+}
+
+#footer p {
+text-align: right;
+}
+
+/* __________________________ Welle */
+
+#header,
+#main {
+overflow: hidden;
+}
+
+hr.wave {
+clear: both;
+background: url(img/wave.png) center 0 no-repeat;
+height: 59px;
+margin-top: -35px;
+margin-bottom: -44px;
+position: relative;
+}
+
+hr.wave-footer {
+margin-top: 30px;
+margin-bottom: -70px;
+}
+
+#footer a:link,
+#footer a:visited {
+color: #653d1d;
+margin-left: 20px;
+}
+
+
+/* -- Tabellenbereich --*/
+
+div#itsthetable {
+}
+
+html>body div#itsthetable {
+	font: normal normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	height: 477px;
+	margin-right: 15px;
+}
+
+div#itsthetable table {
+	border-collapse: collapse
+}
+
+caption {
+	background: url(img/dtable.gif) #FFF repeat-x scroll center left;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	display: none;
+	font: normal normal bold 13px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding: 5px
+}
+
+html>body caption {
+	display: block
+}
+
+thead tr th, tr thead td {
+	background: url(img/dtable.gif) #FFF repeat-x scroll center left;
+	border-bottom: 1px solid #CCC;
+	font: normal normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding: 5px;
+	
+	position: relative;
+	
+	text-align: left;
+}
+
+html>body thead tr th, html>body tr thead td {
+	position: inherit
+}
+
+tbody tr th, tbody tr td {
+	background: url(img/dtablerow.gif) #FFF repeat-x scroll center left;
+	display: table-cell;
+	font: normal normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top
+}
+
+tbody tr.odd th, tbody tr.odd td {
+	background: url(img/dtablerow.gif) #EEE repeat-x scroll center left;
+	display: table-cell;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top
+}
+
+tbody tr:hover th, tbody tr:hover td, tbody tr.odd:hover th, tbody tr.odd:hover td {
+	background: url(img/dtablerow.gif) #999 repeat-x scroll center left;
+	color: #FFF;
+	display: table-cell;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top
+}
+
+tbody tr a, tbody tr a:link, tbody tr a:visited {
+	color: #009;
+	text-decoration: none
+}
+
+tbody a:hover {
+	color: #009;
+	text-decoration: underline
+}
+
+tbody tr:hover th a, tbody tr:hover td a, tbody tr.odd:hover th a, tbody tr.odd:hover td a {
+	color: #FFF;
+	text-decoration: none
+}
+
+tbody tr:hover th a:hover, tbody tr:hover td a:hover, tbody tr.odd:hover th a:hover, tbody tr.odd:hover td a:hover {
+	color: #FFF;
+	text-decoration: underline
+}
+
+tfoot tr th {
+	background: url(img/dtable.gif) #FFF repeat scroll center left;
+	border-top: 1px solid #CCC;
+	font: normal normal bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding: 5px;
+	text-align: right;
+	z-index: 1000000
+}
+
+tfoot tr td {
+	background: url(img/dtable.gif) #FFF repeat scroll center left;
+	border-top: 1px solid #CCC;
+	font: italic normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding: 5px;
+	z-index: 1000000
+}
+
+html>body tfoot tr th, html>body tfoot tr td {
+	border-bottom: 1px solid #CCC
+}
+
+ 
+html>body thead {
+	display: block;
+
+}
+
+html>body tfoot {
+	display: block;
+	position: absolute;
+	margin-top: 620px;
+}
+
+html>body tbody {
+	display: block;
+	height: 400px;
+	overflow: auto;
+
+}
+
+
+
+
+html>body thead tr th {
+	width: 175px;
+}
+
+html>body tbody tr td {
+	width: 170px;
+}
+/*
+html>body thead tr th + th, html>body tbody tr th + td {
+	width: 100px;
+}
+
+html>body thead tr th + th + th, html>body tbody tr th + td + td {
+	width: 80px;
+}
+
+html>body thead tr th + th + th + th, html>body tbody tr th + td + td + td {
+	width: 230px;
+}
+
+html>body thead tr th + th + th + th + th {
+	width: 86px;
+}
+
+html>body tbody tr th + td + td + td + td {
+	width: 70px;
+}
+
+html>body tfoot tr th {
+	width: 98px;
+}
+
+html>body tfoot tr th + td {
+	width: 526px;
+*/

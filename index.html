@@ -1,35 +1,1317 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
+
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen" />
-<title>THM Web-Engineering I - Kapitel 01</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Web Engineering</title>
+  <link href="css/screen.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+<!--
+  <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+-->
+  <meta name="author" content="Justin Time" />
+  <meta name="description" content="Eine Aufgabe im Rahmen des Webdesign-MOOCs der THM" />
+  <meta name="keywords" content="www, thm, webdesign, html, url, htp, tcp, ip, Internetchronik, xhtml, css" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="css/icon/favicon.ico" type="image/vnd.microsoft.icon" />
 </head>
 
 <body>
-	<h1>THM Web-Engineering I</h1>
-	<p>Ein Kurs der Technischen Hochschule Mittelhessen</p>
-	<p></p> 
-	<h5>Kapitel 1</h5>
-	<h4>Starter Kit: Tools für die Website in der Cloud</h4>
-	<div>
-		<img src="http://www.thm.de/site/images/stories/Campus/Galerie_Giessen/100_lg_img_2711.jpg" alt="Blick ins Innere"/>
-	</div>
-	<ul>
-		<li>Kurs-VM in der VirtualBox ausführen</li>
-		<li>Eclipse: Neues Projekt anlegen</li>
-		<li>bootstrap</li>
-		<li>Git initialisieren, Dateien und Ordner hinzufügen, Änderungen bestätigen</li>
-		<li>entferntes Repository bei Github.com anlegen</li>
-		<li>Git und Cloudcontrol</li>
-	</ul>
 
-	<h5><strong>Teilnehmer:</strong> <em>Just Time</em></h5>
-	
-	<p><img src="http://material.ejhb.de/TagCloud_WebEngineering01.png"  alt="Das erste Kapitel - TagCloud" /></p>
-
+  
+  <div id="header" class="wrapper">
+  
+    <h1><img src="bilder/logo.png" alt="Web-Engineering-Seminar" /></h1>
     
-</body>
+    <img class="headerimage" src="bilder/headerbild.jpg" alt="" />
+  
+  </div>
+  
+  <hr class="wave" />
+  
+  <div id="main" class="wrapper">
+  
+    <div id="navi">
+    
+      <ul>
+        <li id="nav-1"><a href="#">Grundlagen</a></li>
+        <li id="nav-2"><a href="#">HTML/CSS</a></li>
+        <li id="nav-3" class="active"><a href="#">XHTML-1.0</a></li>
+        <li id="nav-4"><a href="#">Barrierefrei</a></li>
+        <li id="nav-5"><a href="https://iversity.org/courses">MOOC</a></li>
+      </ul>
+    
+    </div>
+    
+    <div id="left-col">
+    
+      <ul>
+        <li class="active"><a href="#">XHTML-Elements</a></li>
+        <li><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwebdesign.ejhb.de%2Fmooc%2Fkapitel05%2F&amp;charset=utf-8&amp;doctype=XHTML+1.0+Strict&amp;group=0#result">HTML-Validator</a></li>
+        <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwebdesign.ejhb.de%2Fmooc%2Fkapitel05%2F&amp;profile=css21&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=de">CSS-Validator</a></li>
+        <li><a href="#">WYSIWYM</a></li>
+        <li><a href="#">LynX</a></li>
+      </ul>
+      
+      <div id="contactbox">
+      
+        <h2>THM</h2>
+        
+        <img src="bilder/anfahrtskizze.png" alt="Anfahrt zur THM" />
+        
+        <p class="address">Technische Hochschule Mittelhessen</p>
+        
+        <p>Wiesenstraße 14<br />
+        35390 Gießen<br />
+        Tel: +49 641 309 0<br />
+        Fax: +49 641 309 2901<br />
+        Infos: <a href="http://www.thm.de/site/">THM-Seiten</a></p>
+      
+      </div>
+    
+    </div>
+    
+    <div id="right-col">
+    
+      <h2>"XHTML 1.0 strict" - Elemente</h2>
+      
+      
+            
+      <p>XHTML 1.0 stellt die XML-basierte Neuformulierung von HTML 4.01 dar. XHTML 1.0 erhält die bekannten drei Dokumenttypen Strict, Transitional und Frameset. XHTML 1.0 wurde so angelegt, dass eine Rückwärtskompatibilität mit den verbreiteten HTML-Browsern möglich ist. Gleichzeitig kann es von neueren Browsern gemäß den strengen Regeln verarbeitet werden.</p>
+      
+      <hr />
 
+      <p></p>
+
+      <div id="itsthetable">
+
+        <table>
+        <caption>XHTML 1.0 strict - Elemente</caption>
+
+          <thead>
+           <tr>
+            <th>
+            <p>Element-Tag</p>
+            </th>
+            <th>
+            <p>Element-Bedeutung</p>
+            </th>
+            <th>
+            <p>Inline- oder Block-Element</p>
+            </th>
+            <th>
+            <p>Semantisches HTML?</p>
+            </th>
+           </tr>
+          </thead>
+
+          <tbody>
+
+           <tr>
+            <td>
+            <p>&lt;a&gt;&lt;/a&gt;</p>
+            </td>
+            <td>
+            <p>Verweis (Hyperlink) und Anker für Verweise</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;abbr&gt;&lt;/abbr&gt;</p>
+            </td>
+            <td>
+            <p>Abkürzung</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;acronym&gt;&lt;/acronym&gt;</p>
+            </td>
+            <td>
+            <p>Akronym</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;address&gt;&lt;/address&gt;</p>
+            </td>
+            <td>
+            <p>Kontaktangabe zum Autor eines Inhalts (Credits)</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;area /&gt;</p>
+            </td>
+            <td>
+            <p>Verweis-sensitiver Bereich in einer Image-Map-Grafik</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;b&gt;&lt;/b&gt;</p>
+            </td>
+            <td>
+            <p>Stilistische Hervorhebung im Text (üblicherweise fett dargestellt)</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>nicht semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;bas e/&gt;</p>
+            </td>
+            <td>
+            <p>Basis-URL für Referenzen</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;bdo&gt;&lt;/bdo&gt;</p>
+            </td>
+            <td>
+            <p>Richtungsänderung bei bidirektionalem Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;big&gt;&lt;/big&gt;</p>
+            </td>
+            <td>
+            <p>Großschrift</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>nicht semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;blockquote&gt;&lt;/blockquote&gt;</p>
+            </td>
+            <td>
+            <p>Zitat in Form eines eigenen Textabsatzes</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;body&gt;&lt;/body&gt;</p>
+            </td>
+            <td>
+            <p>Inhaltsbereich eines HTML-Dokuments</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;br /&gt;</p>
+            </td>
+            <td>
+            <p>Erzwungener Zeilenumbruch an der betreffenden Stelle</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;button&gt;&lt;/button&gt;</p>
+            </td>
+            <td>
+            <p>Schaltfläche in einem Formular</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;caption&gt;&lt;/caption&gt;</p>
+            </td>
+            <td>
+            <p>Tabellenüberschrift / -unterschrift</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;cite&gt;&lt;/cite&gt;</p>
+            </td>
+            <td>
+            <p>Zitat innerhalb eines Absatzes</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;code&gt;&lt;/code&gt;</p>
+            </td>
+            <td>
+            <p>Quelltext-Auszug innerhalb eines Absatzes</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;col /&gt;</p>
+            </td>
+            <td>
+            <p>Tabellenspalte</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;colgroup&gt;&lt;/colgroup&gt;</p>
+            </td>
+            <td>
+            <p>Gruppe von Tabellenspalten</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;dd&gt;&lt;/dd&gt;</p>
+            </td>
+            <td>
+            <p>Definition, Beschreibung, detaillierter Inhalt zu einem dt-Element</p>
+            </td>
+            <td  >
+            <p>(Block-Element) </p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;del&gt;&lt;/del&gt;</p>
+            </td>
+            <td>
+            <p>gelöschter Inhalt (Änderungsmarkierung)</p>
+            </td>
+            <td>
+            <p>Block-Element Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;dfn&gt;&lt;/dfn&gt;</p>
+            </td>
+            <td>
+            <p>Definition innerhalb eines Absatzes</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;div&gt;&lt;/div&gt;</p>
+            </td>
+            <td>
+            <p>Allgemeiner Bereich</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;dl&gt;&lt;/dl&gt;</p>
+            </td>
+            <td>
+            <p>Liste mit dt- und dd-Elementen, für Definitionslisten, Dialoge usw.</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;dt&gt;&lt;/dt&gt;</p>
+            </td>
+            <td>
+            <p>Zu definierender Ausdruck in einer Definitionsliste, Sprechername in
+            einem Dialog usw.</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;em&gt;&lt;/em&gt;</p>
+            </td>
+            <td>
+            <p>emphatischer Ausdruck innerhalb eines Absatzes (z.B. überspitzte
+            Formulierung)</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;fieldset&gt;&lt;/fieldset&gt;</p>
+            </td>
+            <td>
+            <p>Gruppe von Elementen in einem Formular, Reiter in einem Dialog</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;form&gt;&lt;/form&gt;</p>
+            </td>
+            <td>
+            <p>Formular, Dialog</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;h1&gt;&lt;/h1&gt;</p>
+            </td>
+            <td>
+            <p>Überschrift 1. Ordnung</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;h2&gt;&lt;/h2&gt;</p>
+            </td>
+            <td>
+            <p>Überschrift 2. Ordnung</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;h3&gt;&lt;/h3&gt;</p>
+            </td>
+            <td>
+            <p>Überschrift 3. Ordnung</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;h4&gt;&lt;/h4&gt;</p>
+            </td>
+            <td>
+            <p>Überschrift 4. Ordnung</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;h5&gt;&lt;/h5&gt;</p>
+            </td>
+            <td>
+            <p>Überschrift 5. Ordnung</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;h6&gt;&lt;/h6&gt;</p>
+            </td>
+            <td>
+            <p>Überschrift 6 Ordnung</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;head&gt;&lt;/head&gt;</p>
+            </td>
+            <td>
+            <p>Kopfbereich eines HTML-Dokuments</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;hr /&gt;</p>
+            </td>
+            <td>
+            <p>Trennlinie</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;html&gt;&lt;/html&gt;</p>
+            </td>
+            <td>
+            <p>Dokumentelement von HTML-Dokumenten, schließt das gesamte Dokument
+            ein</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;i&gt;&lt;/i&gt;</p>
+            </td>
+            <td>
+            <p>spezieller Ausdruck im Text, z.B. Fachterminus oder Idiom
+            (üblicherweise kursiv dargestellt)</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>nicht semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;img /&gt;</p>
+            </td>
+            <td>
+            <p>Referenzierte und eingebettete Grafik</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;input /&gt;</p>
+            </td>
+            <td>
+            <p>Formularelement, verwendbar für diverse Typen wie Eingabefelder,
+            Schaltflächen, Auswahlfelder usw.</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;ins&gt;&lt;/ins&gt;</p>
+            </td>
+            <td>
+            <p>Eingefügter Inhalt (Änderungsmarkierung)</p>
+            </td>
+            <td>
+            <p>Block-Element Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;kbd&gt;&lt;/kbd&gt;</p>
+            </td>
+            <td>
+            <p>Darstellung eines über Tastatur einzugebenden Textes im Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;label&gt;&lt;/label&gt;</p>
+            </td>
+            <td>
+            <p>Beschriftungstext eines Formularfeldes</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;legend&gt;&lt;/legend&gt;</p>
+            </td>
+            <td>
+            <p>Überschrift für eine fieldset-Gruppe von Elementen in einem Formular</p>
+            </td>
+            <td>
+            <p>(Inline-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;li&gt;&lt;/li&gt;</p>
+            </td>
+            <td>
+            <p>Listenpunkt in einer ul-, ol- oder menu-Liste</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;link /&gt;</p>
+            </td>
+            <td>
+            <p>Logische Beziehungen der aktuellen Webseite zu anderen Webseiten</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;map&gt;&lt;/map&gt;</p>
+            </td>
+            <td>
+            <p>Bereich für verweis-sensitive Grafiken</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;meta /&gt;</p>
+            </td>
+            <td>
+            <p>Meta-Angabe für nicht im Inhalt sichtbare Dokumentinformationen oder
+            für Anweisungen an den Webserver</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;noscript&gt;&lt;/noscript&gt;</p>
+            </td>
+            <td>
+            <p>Bereich für Inhalte, die angezeigt werden, wenn JavaScript im Browser
+            deaktiviert oder nicht verfügbar ist</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;object&gt;&lt;/object&gt;</p>
+            </td>
+            <td>
+            <p>Eingebettetes Objekt, geeignet für spezielle Multimedia-Objekte,
+            Java-Applets usw.</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;ol&gt;&lt;/ol&gt;</p>
+            </td>
+            <td>
+            <p>Geordnete (z.B. nummerierte) Liste</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;optgroup&gt;&lt;/optgroup&gt;</p>
+            </td>
+            <td>
+            <p>Gruppe von Auswahlmöglichkeiten in einer Auswahlliste</p>
+            </td>
+            <td>
+            <p>(Inline-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;option&gt;&lt;/option&gt;</p>
+            </td>
+            <td>
+            <p>Auswahlmöglichkeit in einer Auswahlliste</p>
+            </td>
+            <td>
+            <p>(Inline-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;p&gt;&lt;/p&gt;</p>
+            </td>
+            <td>
+            <p>Paragraph, Absatz</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;param /&gt;</p>
+            </td>
+            <td>
+            <p>Parameter eines Objekts bei object-Element</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;pre&gt;&lt;/pre&gt;</p>
+            </td>
+            <td>
+            <p>Präformatierter Text (alle Whitespace-Zeichen werden im Browser so dargestellt
+            wie im Text enthalten)</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>nicht semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;q&gt;&lt;/q&gt;</p>
+            </td>
+            <td>
+            <p>Wörtliche Rede in einem Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;samp&gt;&lt;/samp&gt;</p>
+            </td>
+            <td>
+            <p>Beispieltext in einem dokumentierenden Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;script&gt;&lt;/script&gt;</p>
+            </td>
+            <td>
+            <p>Scriptbereich für JavaScript und andere Scriptsprachen</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;select&gt;&lt;/select&gt;</p>
+            </td>
+            <td>
+            <p>Auswahlliste in einem Formular</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;small&gt;&lt;/small&gt;</p>
+            </td>
+            <td>
+            <p>kleiner dargestellter Text als Normalschrift</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>nicht semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;span&gt;&lt;/span&gt;</p>
+            </td>
+            <td>
+            <p>allgemeiner Bereich innerhalb eines Absatzes</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;strong&gt;&lt;/strong&gt;</p>
+            </td>
+            <td>
+            <p>stark betonter Inhalt im Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;style&gt;&lt;/style&gt;</p>
+            </td>
+            <td>
+            <p>Bereich für Stylesheet-Definitionen, z.B. in CSS</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;sub&gt;&lt;/sub&gt;</p>
+            </td>
+            <td>
+            <p>Tiefgestellter Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;sup&gt;&lt;/sup&gt;</p>
+            </td>
+            <td>
+            <p>Hochgestellter Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;table&gt;&lt;/table&gt;</p>
+            </td>
+            <td>
+            <p>Tabelle</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;tbody&gt;&lt;/tbody&gt;</p>
+            </td>
+            <td>
+            <p>Tabellenkörper mit den eigentlichen Daten</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;td&gt;&lt;/td&gt;</p>
+            </td>
+            <td>
+            <p>Tabellenzelle</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;textarea&gt;&lt;/textarea&gt;</p>
+            </td>
+            <td>
+            <p>Mehrzeiliger Eingabebereich in einem Formular</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;tfoot&gt;&lt;/tfoot&gt;</p>
+            </td>
+            <td>
+            <p>Fußbereich in einer Tabelle, z.B. für summarische Daten</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;th&gt;&lt;/th&gt;</p>
+            </td>
+            <td>
+            <p>Tabellenkopfzelle</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;thead&gt;&lt;/thead&gt;</p>
+            </td>
+            <td>
+            <p>Kopfbereich einer Tabelle</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;title&gt;&lt;/title&gt;</p>
+            </td>
+            <td>
+            <p>Titel eines HTML-Dokuments</p>
+            </td>
+            <td>
+            <p>&nbsp;</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;tr&gt;&lt;/tr&gt;</p>
+            </td>
+            <td>
+            <p>Tabellenzeile</p>
+            </td>
+            <td>
+            <p>(Block-Element)</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;tt&gt;&lt;/tt&gt;</p>
+            </td>
+            <td>
+            <p>»Fernschreiber«-Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr class="odd">
+            <td>
+            <p>&lt;ul&gt;&lt;/ul&gt;</p>
+            </td>
+            <td>
+            <p>Unsortierte Liste (Aufzählungsliste)</p>
+            </td>
+            <td>
+            <p>Block-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+            <p>&lt;var&gt;&lt;/var&gt;</p>
+            </td>
+            <td>
+            <p>Variabler Name in einem dokumentierenden Text</p>
+            </td>
+            <td>
+            <p>Inline-Element</p>
+            </td>
+            <td>
+            <p>semantisch</p>
+            </td>
+           </tr>
+
+          </tbody>
+
+         </table>
+
+      </div> <!-- Tabelle div -->
+                                                                                                                                                                                                                                                     
+      <p></p>
+      
+      <ul class="gallery">
+          <li><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwebdesign.ejhb.de%2Fmooc%2Fkapitel05%2F&amp;charset=utf-8&amp;doctype=XHTML+1.0+Strict&amp;group=0#result"><img src="bilder/valid-xhtml10.png" alt="XHTML-Validierung" /></a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwebdesign.ejhb.de%2Fmooc%2Fkapitel05%2F&amp;profile=css21&amp;usermedium=all&amp;warning=1&amp;vextwarning=&amp;lang=de"><img src="bilder/valid-css2-blue.png" alt="CSS-Validierung" /></a></li>
+      </ul>
+
+      <hr />
+      
+      <p>Mit HTML 4 begann das W3C damit, diejenigen Elemente und Attribute, die direkt für die Präsentation des Dokuments zuständig waren und keine ausgabe-unabhängige Strukturierung ausdrückten, schrittweise aus HTML auszuschließen. Zwar enthält XHTML 1.0 genauso wie HTML 4 eine Transitional-Variante mit diesen veralteten Sprachbestandteilen. Es hat sich jedoch im modernen Webdesign durchgesetzt, dass die Strict-Variante verwendet wird und die Dokumente konsequent mit CSS formatiert werden. Der strukturierte Inhalt und das jeweilige Layout können dadurch getrennt definiert werden.</p>
+    
+    </div>  <!-- right-col div -->
+  
+  </div> <!-- main div -->
+  
+   <hr class="wave wave-footer" />
+  
+  <div id="footer" class="wrapper">
+  
+    <p>© 2013 by Wikipedia &amp; JustInTime <a href="http://Eine-Wochenaufgabe-des-Webdesign-MOOCs-der-THM.de">Impressum</a></p>
+  
+  </div>
+  
+  <!--
+  <script type="text/javascript">
+    $('.gallery a').lightBox();
+  </script>
+  -->
+   
+
+
+</body>
 </html>
